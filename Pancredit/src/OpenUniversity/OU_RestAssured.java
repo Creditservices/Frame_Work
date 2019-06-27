@@ -39,9 +39,11 @@ public class OU_RestAssured {
 	
 	public static void CreateAgreement() throws Exception
 	{
+		
+		String methodname =(Thread.currentThread().getStackTrace()[1].getMethodName());
 		try
 		{
-			String methodname =(Thread.currentThread().getStackTrace()[1].getMethodName());	
+				
 		    XML= Driver.recordset2.getField("XMLData");
 		
 		for (int i=0; i<=21; i++)	
@@ -94,15 +96,15 @@ public class OU_RestAssured {
 			    else
 			    {
 			    	flag=false;
-			    	Utilities.ExtentFailReport(methodname);	
-			    	System.out.println("Please Change the datas in Sheet1 ");
-			    	
 			    }
 	    
 		}
 		catch(Exception e)
 		{
-		System.out.println(e);	
+			if(flag==false)
+				Utilities.ExtentFailReport(methodname,e);	
+	    	    System.out.println("Please Change the datas in Sheet1 ");
+		        System.out.println(e);	
 		
 		}
 		

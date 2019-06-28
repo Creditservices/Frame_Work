@@ -1,7 +1,4 @@
 
-	
-	
-	package Startline1_package;
 
 	import java.io.BufferedReader;
 	import java.io.ByteArrayOutputStream;
@@ -33,9 +30,6 @@ import javax.xml.parsers.DocumentBuilder;
 
 	import com.sun.org.apache.xml.internal.serialize.OutputFormat;
 	import com.sun.org.apache.xml.internal.serialize.XMLSerializer;
-
-
-
 
 
 	public class AgreementCreationV1 {

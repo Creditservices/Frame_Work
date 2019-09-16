@@ -60,7 +60,7 @@ public class DDUPLICATES {
 							System.out.println(applicationExceptionList);
 						}*/ 	
 				}
-			//Close the record set
+			//Finally Close the record set
 			DD_recordSet.close();
 		}
 	public static void execute(String jsonData, String Url, String userName, String password)
